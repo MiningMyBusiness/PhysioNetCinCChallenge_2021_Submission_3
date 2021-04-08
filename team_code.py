@@ -81,6 +81,7 @@ def training_code(data_directory, model_directory):
             all_labels.extend(chunk_labels)
             all_groups.extend(group)
             
+    print('Training the encoder model...')
     my_encoder = The_Autoencoder(all_chunks, all_groups)
 
     # Train 12-lead ECG model.
